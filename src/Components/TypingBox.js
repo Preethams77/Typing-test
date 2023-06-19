@@ -145,12 +145,12 @@ const TypingBox = () => {
 
           if (allCurrChars.length === currCharIndex) {
 
-            if (allCurrChars[currCharIndex - 1] && allCurrChars[currCharIndex - 1].className.includes('extra')) {
+            if (allCurrChars[currCharIndex - 1].className.includes('extra')) {
               allCurrChars[currCharIndex - 1].remove();
               allCurrChars[currCharIndex - 2].className += ' current-right';
             }
 
-            if (allCurrChars[currCharIndex - 1]) {
+            else {
               allCurrChars[currCharIndex - 1].className = 'current';
             }
             setCurrCharIndex(currCharIndex - 1);
