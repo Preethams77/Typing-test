@@ -63,7 +63,7 @@ const Footer = () => {
           styles ={{
             control: styles => ({
               ...styles,
-              backgroundColor: theme.background, 
+             // backgroundColor: theme.background, 
               color:theme.textColor
             }),
             menu: styles => ({...styles, backgroundColor: theme.background}),
